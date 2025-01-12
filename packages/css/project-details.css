@@ -1,0 +1,329 @@
+/*==================== VARIABLES ====================*/
+:root {
+  --hue-color: 220;
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: #fff; /* Titles in white for contrast */
+  --text-color: #fff; /* Change all text color to white */
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: rgb(22, 36, 39); /* Updated background color */
+  --container-color: rgb(22, 36, 39);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+}
+
+/*==================== GLOBAL STYLES ====================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: var(--body-color); */
+  color: #4D6673;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100%; /* Ensure full-width container */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*==================== HEADER ====================*/
+.header {
+  width: 100%;
+  background-color: rgb(22, 36, 39); /* Navbar matches background */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap; /* Ensure proper wrapping on smaller devices */
+}
+
+.nav__logo {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 250px;
+}
+
+.nav__menu a {
+  color: #fff; /* Keep nav links white for contrast */
+  text-decoration: none;
+  font-size:  0.813rem;
+  transition: color 0.3s;
+}
+
+.nav__menu a:hover {
+  color: var(--first-color);
+}
+
+/*==================== PROJECT HERO ====================*/
+.project__hero {
+  background-color: #ffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.project__title {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  margin-top: 50px;
+}
+
+/*==================== PROJECT CONTENT ====================*/
+.project__containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 768px;
+  background-color: #fff; /* Match background */
+}
+
+.project__gallery {
+  flex: 1;
+  min-width: 300px;
+  
+}
+
+.project__image-main img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project__image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.project__info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+ 
+}
+.project__info{
+  border: none;
+  box-shadow: none;
+}
+.project__info ul li{
+  list-style-type: circle;
+}
+.projectc_link{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+}
+.projectc_link h2{
+  color: #4D6673;
+  font-size: 1.2rem;
+  display: inline;
+}
+.projectc_link a{
+  color: #4D6673;
+  text-decoration: none;
+  font-size: 1.2rem;
+  align-items: center;
+}
+.projectc_link a img{
+  width: 18px;
+  border: none;
+  display: inline;
+  padding-top: 2px;
+}
+.projectc_link a{
+  background-color: rgba(224, 224, 224, 0.4);
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+.section__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4D6673;
+
+}
+
+.project__description {
+  /* margin-bottom: 1.5rem; */
+  text-align: left;
+  max-width: 1100px;
+  color: #4D6673;
+}
+
+
+
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: var(--first-color);
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+/*==================== FOOTER ====================*/
+.footer__bg {
+  background-color: var(--body-color); /* Match footer to the page background */
+  color: var(--text-color); /* White text for footer */
+  padding: 2rem 1rem;
+  text-align: center;
+  /* Removed the border-top */
+}
+
+/*==================== SCROLL UP ====================*/
+.scrollup {
+  position: fixed;
+  right: 2rem;
+  bottom: -2rem;
+  background-color: var(--first-color);
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: bottom 0.3s;
+  z-index: 100;
+}
+
+.scrollup.show-scroll {
+  bottom: 2rem;
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+}
+.skills{
+  width: 100%;
+}
+.skills p{
+  color: #4D6673;
+  text-align: left;
+  font-weight: bolder;
+  /* margin-bottom: 100px; */
+}
+.Conclusion{
+  margin-bottom: 50px;
+}
+
+/*==================== RESPONSIVE STYLES ====================*/
+
+@media (max-width: 1200px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+
+  .project__containers {
+    flex-direction: column;
+  }
+
+  .project__gallery,
+  .project__info {
+    flex: 1;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .project__title {
+    font-size: 2rem; /* Smaller project title on smaller devices */
+  }
+
+  .project__description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr; /* One column on small screens */
+  }
+
+  .project__containers {
+    padding: 1rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .scrollup {
+    right: 1rem;
+    bottom: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+  }
+
+  .project__title {
+    font-size: 1.5rem; /* Further reduce title size on very small screens */
+  }
+}

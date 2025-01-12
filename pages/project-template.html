@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../packages/css/styles.css">
+    <link rel="stylesheet" href="../packages/css/project-details.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header class="header container" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Amritesh</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Certification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <!--==================== HOME ====================-->
+
+    <!-- HERO SECTION -->
+    <section class="project__hero">
+        <h1 class="project__title">GoodCabs Analysis</h1>
+    </section>
+
+
+
+    <!-- MAIN CONTENT -->
+    <section class="project__containers container">
+        <!-- IMAGE GALLERY -->
+        <div class="project__gallery">
+            <div class="project__image-main">
+                <img src="../packages/images/project_1/main_image.png" alt="Main Dashboard Image" id="mainImage"
+                    onclick="showPreview(this)">
+            </div>
+            <div class="project__image-grid">
+                <img src="../packages/images/project_1/Front_page.png" alt="Image 2" onclick="showPreview(this)">
+                <img src="../packages/images/project_1/Second_page.png" alt="Image 3" onclick="showPreview(this)">
+                <img src="../packages/images/project_1/Third_page.png" alt="Image 4" onclick="showPreview(this)">
+            </div>
+        </div>
+
+        <!-- PROJECT INFORMATION -->
+        <div class="project__info container">
+            <div class="projectc_link">
+                <h2>Project Link: </h2>
+                <a href="#"><img class="images_link" src="../packages/images/project_1/image.png" alt=""> Github</a>
+                <a href="#"><img class="images_link" src="../packages/images/project_1/image (1).png" alt="">
+                    Linkedin</a>
+            </div>
+
+            <h2 class="section__title">About the Project</h2>
+
+            <!-- <h3>Project Objective: </h3> -->
+            <p>
+                The objective of this analysis is to evaluate Goodcabs' performance across key metrics to support growth
+                and service enhancement goals for 2024. Key metrics include trip volume, passenger satisfaction, repeat
+                passenger rate, and trip distribution. <br>
+                <br>
+                Snowflake Schema: Used to model data for clarity and efficiency.
+            </p>
+            <p><strong> Key Datasets:</strong></p>
+            <ul>
+                <li>Trip Details (<code>fact_trips</code>)</li>
+                <li>Passenger Summaries (<code>fact_passenger_summary</code>)</li>
+                <li>Repeat Trip Distribution (<code>dim_repeat_trip_distribution</code>)</li>
+                <li>Monthly Targets (<code>monthly_target_trips</code>, <code>monthly_target_new_passenger</code>)</li>
+            </ul>
+
+
+
+
+
+
+
+            <div class="skills">
+                <p><strong>Skills: </strong> PowerBi, Excel, SQL</p>
+            </div>
+            <div class="approach">
+                <h2 class="section__title">Approach And Insights </h2>
+                <p><strong> 𝐑𝐞𝐩𝐨𝐫𝐭 𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰: </strong></p>
+                <ul>
+                    <li>𝐇𝐨𝐦𝐞 𝐏𝐚𝐠𝐞: User navigation and key sections. </li>
+                    <li>𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰 𝐏𝐚𝐠𝐞: Key metrics for 2024, city ratings, and revenue growth. </li>
+                    <li>𝐓𝐫𝐢𝐩 𝐑𝐞𝐩𝐨𝐫𝐭 𝐏𝐚𝐠𝐞: Key trip metrics like distance, fare, and city-type
+                        distribution.
+                    </li>
+                    <li>𝐏𝐚𝐬𝐬𝐞𝐧𝐠𝐞𝐫 𝐑𝐞𝐩𝐨𝐫𝐭 𝐏𝐚𝐠𝐞: Metrics on total, repeat, and new passengers
+
+                    </li>
+                </ul>
+                <p style="margin-top: 30px;"><strong> 𝐈𝐧𝐬𝐢𝐠𝐡𝐭𝐬: </strong></p>
+                <ul>
+                    <li>Jaipur is the top performer, while Mysore is the lowest in trip volume.</li>
+                    <li>Tourism cities have 25% higher fares per km than business cities.</li>
+                    <li>Repeat passengers rate 1.3 points lower on average.</li>
+                    <li>April is the best, and June is the worst month for trips.</li>
+                    <li>Tourism cities see 6% more weekend trips; business cities have higher repeat passenger rates.</li>
+                    <li>Business cities meet new passenger targets, while tourism cities excel in ratings.</li>
+                  </ul>                  
+            </div>
+            <div class="Conclusion">
+                <h2 class="section__title">Conclusion </h2>
+                <p style="margin-top: 30px;"><strong> Reccomandation: </strong></p>
+                <ul>
+                  <li><strong>Quality of Service:</strong> Since GoodCabs employs local drivers, providing them with training and performance-based incentives (e.g., bonuses linked to customer ratings) can improve service quality and boost repeat passenger rates.</li>
+                  <li><strong>Socioeconomics and Pricing:</strong> Offering bikes, cabs, and rickshaws in Tier 2 cities provides a range of options to meet the needs of the large middle-class population, offering flexible pricing and greater convenience, which can enhance customer satisfaction and drive repeat business.</li>
+                  <li><strong>Building Loyalty for Repeat Business:</strong> Personalizing services, offering loyalty programs, and providing amenities like air-conditioning, easy booking, and in-vehicle chargers can improve customer satisfaction and drive higher repeat passenger rates.</li>
+                </ul>
+            </div>
+
+            <!-- <h2 class="section__title" id="feature_title">Features</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <p class="feature">Real-time data visualization</p>
+                </div>
+
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+            </div> -->
+
+
+
+
+
+            <!-- 
+            <h2 class="section__title" id="Technologies">Technologies Used</h2>
+            <div class="tech__grid">
+                <div class="tech__item">
+                    <i class="fab fa-html5 tech__icon"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-css3 tech__icon"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-js tech__icon"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCROLL UP BUTTON -->
+    <div class="scrollup" id="scrollup">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </div>
+
+    <script src="../packages/js/project_detail.js"></script>
+</body>
+
+</html>

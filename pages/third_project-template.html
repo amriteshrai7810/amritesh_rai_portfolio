@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../packages/css/styles.css">
+    <link rel="stylesheet" href="../packages/css/project-details.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header class="header container" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Amritesh</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Certification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <!--==================== HOME ====================-->
+
+    <!-- HERO SECTION -->
+    <section class="project__hero">
+        <h1 class="project__title">GoodCabs Analysis</h1>
+    </section>
+
+
+
+    <!-- MAIN CONTENT -->
+    <section class="project__containers container">
+        <!-- IMAGE GALLERY -->
+        <div class="project__gallery">
+            <div class="project__image-main">
+                <img src="../packages/images/project_3/main_image.jpg" alt="Main Dashboard Image" id="mainImage"
+                    onclick="showPreview(this)">
+            </div>
+            <div class="project__image-grid">
+                <img src="../packages/images/project_3/first_image.jpg" alt="Image 2" onclick="showPreview(this)">
+                <img src="../packages/images/project_3/second_image.jpg" alt="Image 3" onclick="showPreview(this)">
+                <img src="../packages/images/project_3/third_image.jpg" alt="Image 4" onclick="showPreview(this)">
+            </div>
+        </div>
+
+        <!-- PROJECT INFORMATION -->
+        <div class="project__info container">
+            <div class="projectc_link">
+                <h2>Project Link: </h2>
+                <a href="#"><img class="images_link" src="../packages/images/project_1/image.png" alt=""> Github</a>
+                <a href="#"><img class="images_link" src="../packages/images/project_1/image (1).png" alt="">
+                    Linkedin</a>
+            </div>
+
+            <h2 class="section__title">About the Project</h2>
+
+            <!-- <h3>Project Objective: </h3> -->
+            <p>
+                Analyzed churn for Databel, a telecommunication company, to identify high-churn segments, key drivers,
+                and actionable recommendations
+            </p>
+            <p><strong> Steps Taken:</strong></p>
+            <ul>
+                <li>Cleaned data and handled null values.
+                </li>
+                <li>Analyzed churn with pivot tables and charts.
+                </li>
+                <li>Calculated correlations between churn and key variables.
+                </li>
+                <li>Built interactive <code>visualizations to</code>, <code>explore churn patterns.</code></li>
+            </ul>
+
+
+
+
+
+
+
+            <div class="skills">
+                <p><strong>Skills: </strong>Excel,Power Query, Pivot Table</p>
+            </div>
+            <div class="approach">
+                <h2 class="section__title">Approach And Insights </h2>
+                <!-- <p><strong> 𝐑𝐞𝐩𝐨𝐫𝐭 𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰: </strong></p> -->
+                <ul>
+                    <p><b>Churn Rates:</b></p>
+                    <li>California (CA) has the highest churn rate at 63%.</li>
+                    <li>No gender disparity in churn rates.</li>
+                </ul>
+                <br>
+                <ul>
+                    <p><b>Drivers of Churn:</b></p>
+                    <li><b>Customer Service Calls:</b> Negative correlation (0.64) with churn; churn increases
+                        significantly (>2 calls, from 36% to 87%).</li>
+                    <li><b>Account Length:</b> Weak negative correlation (-0.35), indicating longer tenure slightly
+                        reduces churn.</li>
+                    <li><b>Data Usage:</b> Lower data usage (<3GB) leads to 13% higher churn.</li>
+                    <li><b>Average Monthly Charges:</b> Churned customers pay $8 more on average.</li>
+                    <li><b>Demographics:</b> No gender-based churn differences. Contract types and payment methods show
+                        strong churn relationships.</li>
+                </ul>
+                <br>
+                <ul>
+                    <p><b>Segmentation:</b></p>
+                    <li>Churn types identified: conditional loyal subscribers, conditional churners, lifestyle
+                        migrators, and unsatisfied customers.</li>
+                </ul>
+
+            </div>
+            <div class="Conclusion">
+                <h2 class="section__title">Conclusion </h2>
+                <p style="margin-top: 30px;"><strong> Reccomandation: </strong></p>
+                <p>This analysis provides critical insights into customer churn patterns for Databel. By addressing
+                    high-churn customer segments and improving customer service quality, Databel can reduce churn rates
+                    and enhance customer satisfaction.</p>
+            </div>
+
+            <!-- <h2 class="section__title" id="feature_title">Features</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <p class="feature">Real-time data visualization</p>
+                </div>
+
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+            </div> -->
+
+
+
+
+
+            <!-- 
+            <h2 class="section__title" id="Technologies">Technologies Used</h2>
+            <div class="tech__grid">
+                <div class="tech__item">
+                    <i class="fab fa-html5 tech__icon"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-css3 tech__icon"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-js tech__icon"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCROLL UP BUTTON -->
+    <div class="scrollup" id="scrollup">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </div>
+
+    <script src="../packages/js/project_detail.js"></script>
+</body>
+
+</html>

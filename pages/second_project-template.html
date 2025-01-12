@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../packages/css/styles.css">
+    <link rel="stylesheet" href="../packages/css/project-details.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header class="header container" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Amritesh</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Certification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <!--==================== HOME ====================-->
+
+    <!-- HERO SECTION -->
+    <section class="project__hero">
+        <h1 class="project__title">GoodCabs Analysis</h1>
+    </section>
+
+
+
+    <!-- MAIN CONTENT -->
+    <section class="project__containers container">
+        <!-- IMAGE GALLERY -->
+        <div class="project__gallery">
+            <div class="project__image-main">
+                <img src="../packages/images/project_2/main_page.jpg" alt="Main Dashboard Image" id="mainImage"
+                    onclick="showPreview(this)">
+            </div>
+            <div class="project__image-grid">
+                <img src="../packages/images/project_2/Front_page.jpg" alt="Image 2" onclick="showPreview(this)">
+                <img src="../packages/images/project_2/second_page.jpg" alt="Image 3" onclick="showPreview(this)">
+                <img src="../packages/images/project_2/third_page.jpg" alt="Image 4" onclick="showPreview(this)">
+            </div>
+        </div>
+
+        <!-- PROJECT INFORMATION -->
+        <div class="project__info container">
+            <div class="projectc_link">
+                <h2>Project Link: </h2>
+                <a href="https://github.com/amriteshrai7810"><img class="images_link"
+                        src="../packages/images/project_1/image.png" alt=""> Github</a>
+                <a href="https://www.linkedin.com/in/amritesh-rai/"><img class="images_link"
+                        src="../packages/images/project_1/image (1).png" alt="">
+                    Linkedin</a>
+            </div>
+
+            <h2 class="section__title">About the Project</h2>
+
+            <!-- <h3>Project Objective: </h3> -->
+            <p>
+                Used Python (Pandas, Matplotlib) to analyze inventory and mechanic performance data for a bike servicing
+                company. Prioritized inventory based on demand trends and evaluated mechanic performance to enhance
+                operational efficiency<br>
+                <!-- <br>
+                Snowflake Schema: Used to model data for clarity and efficiency. -->
+            </p>
+            <!-- <p><strong> Key Datasets:</strong></p>
+            <ul>
+                <li>Trip Details (<code>fact_trips</code>)</li>
+                <li>Passenger Summaries (<code>fact_passenger_summary</code>)</li>
+                <li>Repeat Trip Distribution (<code>dim_repeat_trip_distribution</code>)</li>
+                <li>Monthly Targets (<code>monthly_target_trips</code>, <code>monthly_target_new_passenger</code>)</li>
+            </ul> -->
+
+
+
+
+
+
+
+            <div class="skills">
+                <p><strong>Skills: </strong> PowerBi, Excel, SQL</p>
+            </div>
+            <div class="approach">
+                <h2 class="section__title">Approach And Insights </h2>
+                <!-- <p><strong> 𝐑𝐞𝐩𝐨𝐫𝐭 𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰: </strong></p> -->
+                <ul>
+                    <p><b>𝐇𝐢𝐠𝐡-𝐕𝐚𝐥𝐮𝐞 𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫𝐬:</b></p>
+                    <li>Analyzed customer and payment data to identify top spenders using statistical methods.</li>
+                    <li>Recognized spending trends to highlight valuable customers for business focus.</li>
+                </ul>
+                
+                <ul>
+                    <p><b>𝐏𝐫𝐞𝐝𝐢𝐜𝐭𝐢𝐧𝐠 𝐏𝐚𝐫𝐭𝐬 𝐔𝐬𝐚𝐠𝐞:</b></p>
+                    <li>Analyzed historical data on parts used during servicing to predict future demand.</li>
+                    <li>Aimed to reduce inventory rotation time, ensuring parts don’t sit in stock too long.</li>
+                </ul>
+                
+                <ul>
+                    <p><b>𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭:</b></p>
+                    <li>Adjusted inventory levels based on demand predictions, optimizing stock management.</li>
+                    <li>Reduced the duration parts remain in inventory by over 5 days.</li>
+                </ul>
+            </div>
+            <div class="Conclusion">
+                <h2 class="section__title">𝐑𝐞𝐬𝐮𝐥𝐭𝐬 </h2>
+                <ul>
+                    <li> Identified high-value customers and optimized inventory, leading to more efficient stock management and improved overall business operations .</li>
+                    <li>Developed strategies to target high-value customers for service plans, such as offering multi-servicing cards, which lowered the overall servicing price and increased customer retention.
+                    </li>
+                    <li>• Leveraged data on the most frequently used parts to make bulk purchases, securing discounts and optimizing future inventory procurement.</li>
+                </ul>
+            </div>
+
+            <!-- <h2 class="section__title" id="feature_title">Features</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <p class="feature">Real-time data visualization</p>
+                </div>
+
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+            </div> -->
+
+
+
+
+
+            <!-- 
+            <h2 class="section__title" id="Technologies">Technologies Used</h2>
+            <div class="tech__grid">
+                <div class="tech__item">
+                    <i class="fab fa-html5 tech__icon"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-css3 tech__icon"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-js tech__icon"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCROLL UP BUTTON -->
+    <div class="scrollup" id="scrollup">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </div>
+
+    <script src="../packages/js/project_detail.js"></script>
+</body>
+
+</html>
