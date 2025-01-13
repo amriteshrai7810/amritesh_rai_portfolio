@@ -1,3 +1,4 @@
-## Welcome to my Portfolio ✨
+# <div align="center"> Welcome to My Portfolio </div>
 
-## Check the Website: [My Portfolio](https://amriteshrai7810.github.io/amritesh_rai_portfolio/index.html)
+
+# <div align="center"> [💼 Go to Site](https://amriteshrai7810.github.io/amritesh_rai_portfolio/index.html) </div>
