@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Define the links for each certificate
   const certLinks = {
-      "data-science": "https://www.coursera.org/account/accomplishments/specialization/JKBAT6TSMEFJ",
+      "SkillSlash": "https://skillslash.com/verify-certificate",
       "quantium": "https://www.coursera.org/account/accomplishments/specialization/24YBNWJAJUMG",
       "machine-learning": "https://www.coursera.org/account/accomplishments/specialization/Q0CVBPO6B84O?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n",
       "sql": "https://www.coursera.org/account/accomplishments/professional-cert/YUASVBFPIIH5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=prof",
