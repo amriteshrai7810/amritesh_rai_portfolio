@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../packages/css/styles.css">
+    <link rel="stylesheet" href="../packages/css/project-details.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header class="header container" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Amritesh</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Certification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <!--==================== HOME ====================-->
+
+    <!-- HERO SECTION -->
+    <section class="project__hero">
+        <h1 class="project__title">Atliq Mart Analysis</h1>
+    </section>
+
+
+
+    <!-- MAIN CONTENT -->
+    <section class="project__containers container">
+        <!-- IMAGE GALLERY -->
+        <div class="project__gallery">
+        <div class="project__gallery">
+            <div class="project__image-main">
+                <iframe title="Good_cab_analysis" width="720" height="480" src="https://app.powerbi.com/view?r=eyJrIjoiZTc0MzljYjgtOTc4Yy00MzQ1LTljMWYtODAxNjE5MTEyZmEyIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9", frameborder="0", frameborder="0" allowFullScreen="true"></iframe>
+                          </div>            
+        </div>
+
+        <!-- PROJECT INFORMATION -->
+        <div class="project__info container">
+            <div class="projectc_link">
+                <h2>Project Link: </h2>
+                <a href="https://github.com/amriteshrai7810/Supply-Chain-Analysis"><img class="images_link" src="../packages/images/project_1/image.png" alt=""> Github</a>
+                <a href="https://www.linkedin.com/posts/amritesh-rai_good-cabs-analysis-activity-7282333947559100418-SCYK?utm_source=share&utm_medium=member_desktop"><img class="images_link" src="../packages/images/project_1/image (1).png" alt="">
+                    Linkedin</a>
+            </div>
+
+            <h2 class="section__title">About the Project</h2>
+
+            <!-- <h3>Project Objective: </h3> -->
+            <p>
+                To analyze Atliq Mart’s service level performance (OTIF, LIFR, VOFR) across cities and customers to 
+                identify factors contributing to customer contract non-renewals. This analysis will provide data-driven 
+                insights through trend tracking, target comparisons, and drill-down capabilities to drive service improvements. <br>
+                <br>
+                Star Schema Schema: Used to model data for clarity and efficiency.
+
+                <img src="/packages/images/atliq_data_model.png" alt="Data Model Atliq Mart">
+            </p>
+            <p><strong> Key Datasets:</strong></p>
+            <ul>
+                <li>dim_customers (<code>Customer Data</code>)</li>
+                <li>dim_products (<code>Product Data</code>)</li>
+                <li>dim_date (<code>Date Hierarchy</code>)</li>
+                <li>fact_order_lines (<code>Order data</code>)</li>
+                <li>fact_order_aggregate (<code>Aggregate of orders</code>)</li>
+                <li>dim_target_orders (<code>Target for Orders</code>)</li>
+            </ul>
+
+
+
+
+
+
+
+            <div class="skills">
+                <p><strong>Skills: </strong> PowerBi, Excel, SQL</p>
+            </div>
+            <div class="approach">
+                <h2 class="section__title">Approach And Insights </h2>
+                <p><strong> 𝐑𝐞𝐩𝐨𝐫𝐭 Pages: </strong></p>
+                <ul>
+
+                    <li>Orders: Overview of total orders, OT, IF, and OTIF % </li>
+                    <li>Customer Split:: Tracks OT, IF, and OTIF % for each customer store </li>
+                    <li>Metrics Over Time: Displays OT, IF, OTIF %, LIFR, and VOFR trends</li>
+                    <li>Order Lines: Tracks LIFR and VOFR, with order lines filled and completed.</li>
+                    <li>Line Lead Analysis: Highlights delayed products by food category</li>
+
+                </ul>
+                <p style="margin-top: 30px;"><strong> 𝐈𝐧𝐬𝐢𝐠𝐡𝐭𝐬: </strong></p>
+                <ul>
+                    <li>Low LIFR, delivery delays, and inefficiencies may lead to contract non-renewals.</li>
+                    <li>OT, IF, and OTIF consistently miss targets due to forecasting and supply issues.</li>
+                    <li>Poor inventory management and shortages cause delays for key stores.</li>
+                  </ul>                  
+            </div>
+            <div class="Conclusion">
+                <h2 class="section__title">Conclusion </h2>
+                <p style="margin-top: 30px;"><strong> Reccomandation: </strong></p>
+                <ul>
+                  <li><strong>Logistics & Lead Time:</strong> Optimize operations and tracking for faster deliveries.</li>
+                  <li><strong>Inventory Management:</strong> Improve forecasting to reduce shortages.</li>
+                  <li><strong>Supplier Base:</strong> Diversify vendors to ensure stock and boost LIFR. </li>
+                </ul>
+            </div>
+
+            <!-- <h2 class="section__title" id="feature_title">Features</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <p class="feature">Real-time data visualization</p>
+                </div>
+
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <p class="feature">Dynamic configuration options</p>
+                </div>
+            </div> -->
+
+
+
+
+
+            <!-- 
+            <h2 class="section__title" id="Technologies">Technologies Used</h2>
+            <div class="tech__grid">
+                <div class="tech__item">
+                    <i class="fab fa-html5 tech__icon"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-css3 tech__icon"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech__item">
+                    <i class="fab fa-js tech__icon"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCROLL UP BUTTON -->
+    <div class="scrollup" id="scrollup">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </div>
+
+    <script src="../packages/js/project_detail.js"></script>
+</body>
+
+</html>
